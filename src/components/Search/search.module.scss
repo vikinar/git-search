@@ -1,0 +1,44 @@
+@import "../../styles/variables";
+
+.search-box{
+  display: flex;
+  flex: 1;
+  align-items: center;
+  margin: 1.5rem 0;
+  position: relative;
+  width: 100%;
+  &_input{
+    background: rgba(255,255,255, .05);
+    border: .1rem solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.87);
+    outline: none;
+    flex-grow: 2;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+  }
+  .btn{
+    display: flex;
+    cursor: pointer;
+    background: $primary;
+    border: none;
+    color: white;
+    border-radius: 5rem;
+    padding: .5rem 1rem;
+    margin: 0 1rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    position: absolute;
+    right: 0;
+    &:hover{
+      background: $accent;
+      transition: ease .25s;
+    }
+
+    .icon{
+      fill: white;
+      flex: 1;
+      flex-shrink: 0;
+      max-height: 100%;
+    }
+  }
+}

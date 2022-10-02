@@ -1,0 +1,18 @@
+@import "../../../styles/variables";
+
+.repo{
+  flex-basis: 30%;
+  width: 280px;
+  min-width: 280px;
+  margin: 1.5rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.5rem;
+  h4{
+    color: $primary;
+  }
+}
+
+.divider{
+  border: 1px solid rgba(255, 255, 255, .025);
+}
