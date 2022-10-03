@@ -1,5 +1,5 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
-import {IRepoType} from "../types";
+import {IRepoType, IUserType} from "../types";
 
 export interface Params {
     name: string
@@ -12,7 +12,7 @@ export const userApi = createApi({
         baseUrl: 'https://api.github.com/'
     }),
     endpoints: (builder) => ({
-        getUser: builder.query<any, string>({
+        getUser: builder.query<IUserType, string>({
             query: (name) => `users/${name}`,
         }),
         getRepos: builder.query<IRepoType[], Params>({
